@@ -1,0 +1,12 @@
+name: Simple Workflow d'exemple - Maeva
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher message automatique
+        run: echo "✅ Workflow GitHub Actions exécuté avec succès par Maeva Pidjou !"
